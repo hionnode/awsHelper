@@ -11,6 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/cors": "^8.4.0",
+    "@fastify/postgres": "^5.2.0",
+    "@fastify/sensible": "^5.3.0",
+    "@fastify/static": "^6.11.2",
+    "@fastify/swagger": "^8.11.0",
     "fastify": "^4.23.2"
   },
   "devDependencies": {
