@@ -14,17 +14,19 @@ app.register(fastifyCors, {
     origin: '*'
 });
 
-app.register(fastifySwagger, {
-    routePrefix: '/docs',
-    swagger: {
-        info: {
-            title: 'Fastify Boilerplate API',
-            version: '1.0.0',
-        },
-    },
-    exposeRoute: true,
-});
+// app.register(fastifySwagger, {
+//     routePrefix: '/docs',
+//     swagger: {
+//         info: {
+//             title: 'Fastify Boilerplate API',
+//             version: '1.0.0',
+//         },
+//     },
+//     exposeRoute: true,
+// });
 const __dirname = dirname(new URL(import.meta.url).pathname);
 app.register(fastifyAutoload, {
     dir: join(__dirname, 'routes')
 });
+
+export default app;
