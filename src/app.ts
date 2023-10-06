@@ -4,7 +4,7 @@ import fastifyCors from '@fastify/cors';
 import fastifySwagger from '@fastify/swagger';
 import fastifyAutoload from '@fastify/autoload';
 import { dirname, join } from 'path';
-const app = fastify({logger:true});
+const app = fastify({ logger: true });
 
 app.register(fastifyPostgres, {
     connectionString: 'postgres://postgres:postgres@localhost:5432/postgres'
